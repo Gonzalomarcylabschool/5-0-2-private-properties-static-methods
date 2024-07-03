@@ -37,13 +37,13 @@ class User {
   }
 }
 
-const ben = new User('ben', 'ben@mail.com');
-ben.validatePassword('1234'); // No password set.
-ben.setPassword('1234');
-ben.validatePassword('1234'); // It Matches!
-ben.password = '1212';// what will this do?
-ben.validatePassword('1234'); // is this true?
-ben.validatePassword('1212');// what about this one?
+const gonzalo = new User('gonzalo', 'gonzalo@mail.com');
+gonzalo.validatePassword('1234'); // No password set.
+gonzalo.setPassword('1234');
+gonzalo.validatePassword('1234'); // It Matches!
+gonzalo.password = '1212';// what will this do?
+gonzalo.validatePassword('1234'); // is this true?
+gonzalo.validatePassword('1212');// what about this one?
 ```
 Ideally, we wouldn't want the `password` property to be directly accessible and modifiable. This is where the concept of __private properties__ comes in.
 
@@ -87,10 +87,10 @@ class User {
   }
 }
 
-const ben = new User('ben', 'ben@mail.com');
-ben.validatePassword('1234'); // No password set.
-ben.setPassword('1234');
-ben.validatePassword('1234'); // It Matches!
+const gonzalo = new User('gonzalo', 'gonzalo@mail.com');
+gonzalo.validatePassword('1234'); // No password set.
+gonzalo.setPassword('1234');
+gonzalo.validatePassword('1234'); // It Matches!
 ```
 
 While this convention is widely used, it's important to note that it doesn't provide true encapsulation or prevent access to the property. It's more of a suggestion to other developers.
@@ -127,10 +127,10 @@ class User {
   }
 }
 
-const ben = new User('ben', 'ben@mail.com');
-ben.validatePassword('1234'); // No password set.
-ben.setPassword('1234');
-ben.validatePassword('1234'); // It Matches!
+const gonzalo = new User('gonzalo', 'gonzalo@mail.com');
+gonzalo.validatePassword('1234'); // No password set.
+gonzalo.setPassword('1234');
+gonzalo.validatePassword('1234'); // It Matches!
 ```
 
 ## Static Properties and Methods
@@ -218,7 +218,7 @@ class User {
   }
 }
 
-const ben = new User('ben', 'ben@mail.com', 123);
+const gonzalo = new User('gonzalo', 'gonzalo@mail.com', 123);
 const carmen = new User('carmen', 'carmen@mail.com', 456);
 const zo = new User('zo', 'zo@mail.com', 789);
 

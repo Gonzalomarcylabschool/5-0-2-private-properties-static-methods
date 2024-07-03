@@ -29,11 +29,16 @@ class User {
   }
 }
 
-const ben = new User('ben', 'ben@mail.com');
-ben.validatePassword('1234'); // No password set.
-ben.setPassword('1234');
-ben.validatePassword('1234'); // It Matches!
-ben.#password = '1212';
-ben.validatePassword('1234'); // Wrong password!
-ben.validatePassword('1212'); // It Matches!
+const gonzalo = new User('gonzalo', 'gonzalo@mail.com');
+gonzalo.validatePassword('1234'); // No password set.
+gonzalo.setPassword('1234');
+gonzalo.validatePassword('1234'); // It Matches!
+gonzalo.#password = '1212';
+gonzalo.validatePassword('1234'); // Wrong password!
+gonzalo.validatePassword('1212'); // It Matches!
 
+// how did our changes affect the code?
+
+// what are the benefits of using the `#` notation?
+
+// what are question or concerns do you have about using the `#` notation?

@@ -26,7 +26,7 @@ class User {
   //add static method here
 }
 
-const ben = new User('ben', 'ben@mail.com');
-ben.validatePassword('1234'); // No password set.
-ben.setPassword('1234');
-ben.validatePassword('1234'); // It Matches!
+const gonzalo = new User('gonzalo', 'gonzalo@mail.com');
+gonzalo.validatePassword('1234'); // No password set.
+gonzalo.setPassword('1234');
+gonzalo.validatePassword('1234'); // It Matches!
